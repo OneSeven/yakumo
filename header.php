@@ -11,7 +11,6 @@
     <meta property="og:title" content="<?php $this->title() ?>" />
     <meta property="og:url" content="<?php $this->permalink() ?>" />
     <?php endif; ?>
-
     <title><?php $this->archiveTitle(array(
             'category'  =>  _t('分类「%s」'),
             'search'    =>  _t('搜索「%s」'),
@@ -21,16 +20,16 @@
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/all.min.css'); ?>">
     <style type="text/css">
         @font-face {
-            font-family: 'Exo';
-            font-style: normal;
-            font-weight: 100;
-            src: local('Exo Thin'), local('Exo-Thin'), url(<?php $this->options->themeUrl('fonts/Thin.woff'); ?>) format('woff');
+            font-family:'Exo';
+            font-style:normal;
+            font-weight:100;
+            src:local('Exo Thin'), local('Exo-Thin'), url(<?php $this->options->themeUrl('fonts/Thin.woff'); ?>) format('woff');
         }
         @font-face {
-            font-family: 'Exo';
-            font-style: normal;
-            font-weight: 400;
-            src: local('Exo Regular'), local('Exo-Regular'), url(<?php $this->options->themeUrl('fonts/Regular.woff'); ?>) format('woff');
+            font-family:'Exo';
+            font-style:normal;
+            font-weight:400;
+            src:local('Exo Regular'), local('Exo-Regular'), url(<?php $this->options->themeUrl('fonts/Regular.woff'); ?>) format('woff');
         }
     </style>
     <script type="text/javascript" src="<?php $this->options->themeUrl('js/jquery.js'); ?>"></script>  

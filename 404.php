@@ -7,14 +7,14 @@
     <style>
         body {
             overflow: hidden;
-            height: 100%;
-            margin: 0;
-            padding: 0
+            height:100%;
+            margin:0;
+            padding:0;
         }
         img {
-            width: 100%;
-            height: 100%;
-            position: fixed
+            width:100%;
+            height:100%;
+            position:fixed;
         }
     </style>
     <script type="text/javascript" src="<?php $this->options->themeUrl('js/rainday.js'); ?>"></script>
@@ -29,7 +29,7 @@
 				engine.rain([ [1, 0, 10], [1, 5, 1] ], 50);
 			};
 			image.crossOrigin = 'anonymous';
-        	image.src = "<?php $this->options->themeUrl('image/header.jpg'); ?>";
+        	image.src = '<?php $this->options->themeUrl('image/header.jpg'); ?>';
         }
 	</script>
 </head>

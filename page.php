@@ -2,7 +2,7 @@
 
 <body class="post-template">
 
-	<header id="header" data-url="<?php if(isset($this->fields->cover)){$this->fields->cover();}else{$this->options->themeUrl('image/header.jpg');} ?>" class="home-header blog-background banner-mask lazy no-cover">		
+	<header id="header" data-url="<?php if($this->fields->cover){$this->fields->cover();}else{$this->options->themeUrl('image/header.jpg');} ?>" class="home-header blog-background banner-mask lazy no-cover">		
     	<div class="nav-header">
             <div class="nav-header-container">
                  <a href="<?php $this->options->siteUrl(); ?>" class="back-home">首页</a>
@@ -53,37 +53,37 @@
 	    </article>
 	    <section class="share">
             <div class="share-icons" id="share-icons">
-            	<?php if (!empty($this->options->weibo)): ?>	
+            	<?php if ($this->options->weibo): ?>	
                	<a class="icon-share" target="_blank" href="<?php $this->options->weibo(); ?>">
                     <span class=""><i class="iconfont iconfont-weibo">&#xe712;</i></span>
                 </a>
                 <?php endif; ?>
 
-                <?php if (!empty($this->options->zhihu)): ?>	
+                <?php if ($this->options->zhihu): ?>	
                 <a class="icon-share" target="_blank" href="<?php $this->options->zhihu(); ?>">
                     <span class=""><i class="iconfont iconfont-zhihu">&#xe704;</i></span>
                 </a>
                 <?php endif; ?>
 
-                <?php if (!empty($this->options->douban)): ?>	
+                <?php if ($this->options->douban): ?>	
                 <a class="icon-share" target="_blank" href="<?php $this->options->douban(); ?>">
                     <span class=""><i class="iconfont iconfont-douban">&#xe711;</i></span>
                 </a>
                 <?php endif; ?>
 
-                <?php if (!empty($this->options->github)): ?>	
+                <?php if ($this->options->github): ?>	
                 <a class="icon-share" target="_blank" href="<?php $this->options->github(); ?>">
                     <span class=""><i class="iconfont iconfont-github">&#xe710;</i></span>
                 </a>
                 <?php endif; ?>
 
-                <?php if (!empty($this->options->facebook)): ?>	
+                <?php if ($this->options->facebook): ?>	
                 <a class="icon-share" target="_blank" href="<?php $this->options->facebook(); ?>">
                     <span class=""><i class="iconfont iconfont-facebook">&#xe708;</i></span>
                 </a>
                 <?php endif; ?>
 
-                <?php if (!empty($this->options->twitter)): ?>	
+                <?php if ($this->options->twitter): ?>	
                 <a class="icon-share" target="_blank" href="<?php $this->options->twitter(); ?>">
                     <span class=""><i class="iconfont iconfont-twitter">&#xe701;</i></span>
                 </a>
@@ -102,5 +102,5 @@
 	        $('.fancybox').fancybox();
 	    });
 	</script>
-
+	
 	<?php $this->need('footer.php'); ?>

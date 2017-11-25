@@ -1,6 +1,6 @@
 <?php
 /**
-	* 八云酱后宫群 386439328
+	* 八云酱博客主题
 	* @package yakumo
 	* @author 八云酱
 	* @version 1.0.0
@@ -12,9 +12,9 @@
 <body class="home-template">
 	<header id="header" data-url="<?php $this->options->themeUrl('image/header.jpg'); ?>" class="home-header blog-background banner-mask lazy no-cover">
 	        <div class="nav-header-container">
-	            <a href="<?php $this->options->siteUrl(); ?>" class="svg-logo" target="_blank">
+	            <a href="http://code.bayun.org" class="svg-logo" target="_blank">
 	                <span class="svg-logo"> 
-	                    <img src="<?php $this->options->themeUrl('image/logo.png'); ?>" style="width: 50px;height: 50px;">       
+	                    <img src="<?php $this->options->themeUrl('image/logo.png'); ?>" style="width: 40px;height: 40px;">       
 	                </span>
 	            </a>
 	        </div>
@@ -41,9 +41,7 @@
 
 			    <section class="post-excerpt">
 				    <a href="<?php $this->permalink() ?>">
-				        <p>
-				        <img class="lazy" data-url="<?php if(isset($this->fields->cover)){$this->fields->cover();}else{$this->options->themeUrl('image/header.jpg');} ?>" style="display: block;">
-				        </p>
+				        <img class="lazy" data-url="<?php if($this->fields->cover){$this->fields->cover();}else{$this->options->themeUrl('image/header.jpg');}?>" style="display: block;">
 				    </a>
 				    <div class="info-mask">
 						<div class="mask-wrapper">
@@ -51,9 +49,6 @@
 								<a href="<?php $this->permalink() ?>">
 									<?php $this->title() ?>
 								</a>
-								<span style="font-size: 1.6rem">
-									<?php $this->viewsNum(); ?>
-								</span>
 							</h2>
 							<div class="post-meta">
 								<span class="post-time"><?php $this->date('d M Y'); ?></span>

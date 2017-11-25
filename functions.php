@@ -2,6 +2,7 @@
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 function themeConfig($form) {
+
     $authorAvatar = new Typecho_Widget_Helper_Form_Element_Text('authorAvatar', NULL, NULL, _t('头像地址'), _t(''));
     $form->addInput($authorAvatar);
 
@@ -23,4 +24,3 @@ function themeConfig($form) {
     $twitter = new Typecho_Widget_Helper_Form_Element_Text('twitter', NULL, NULL, _t('Twitter'), _t(''));
     $form->addInput($twitter);
 }
-
